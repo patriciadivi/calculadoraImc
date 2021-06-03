@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Calculadora IMC</title>
 </head>
@@ -15,25 +17,30 @@
 
             <div class="container-calculadora-peso">
                 <p>Digite seu peso</p>
-                <input class="peso-slider" type="range">
-                <p>Peso</p>
-                <input class="input-number" type="number">
-
+                
+                <input id="peso" class="input-number" type="number">
+                 <span>Kg</span>   
             </div>
 
             <div class="container-calculadora-altura">
                 <p>Digite sua altura</p>
-                <input class="altura-slider" type="range">
-                <p>Altura</p>
-                <input class="input-number" type="number">
+                
+                <input id="altura" class="input-number" type="number">
+                <span>cm</span>
 
             </div>
 
-            <input class="botao-calcular" type="button" value="Calcular">
-
+            <div>
+                <input id="btnCalcular" class="botao-calcular" type="button" value="Calcular">
+            </div>
+            
         </form>
 
+        <div id="resultado"></div>
+
     </div>
+
+    
 
     <script src="./scripts/script.js"></script>
 </body>
